@@ -20,36 +20,6 @@ public:
 	}
 };
 
-// 父类
-class Base
-{
-public:
-    Base()
-    {
-        std::cout << "Base construct.." << std::endl;
-    }
-
-    ~Base()
-	{
-		std::cout << "Base destruct.." << std::endl;
-	}
-};
-
-// 子类
-class Derive : public Base
-{
-public:
-    Derive()
-    {
-        std::cout << "Derive construct.." << std::endl;
-    }
-
-    ~Derive()
-	{
-		std::cout << "Derive destruct.." << std::endl;
-	}
-};
-
 void printfList(Yami::list<int> & list_INT)
 {
     Yami::list<int>::list_iterator itrBegin = list_INT.begin();
